@@ -1,6 +1,7 @@
 package com.example.android.wmovies.Adapters;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,7 @@ public class MainMoviesAdapter extends ArrayAdapter {
 
         name.setText(movie.getName());
         rating.setText(movie.getRating()+"/10");
+        Log.i("TAGURL",movie.getImage_url());
         Picasso.get().load(movie.getImage_url()).into(imageView);
 
         return mView;
