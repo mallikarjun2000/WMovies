@@ -25,7 +25,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    String LATEST_MOVIES_URL ="https://yts.lt/api/v2/list_movies.json?";
+    String LATEST_MOVIES_URL ="https://******/api/v2/list_movies.json?";
     String BASE_URL = LATEST_MOVIES_URL;
     String sort_by="date_added";
     String Order_by="desc";
